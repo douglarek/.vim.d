@@ -8,6 +8,11 @@ set helpheight=15
 "Get out of VI's compatible mode.
 set nocompatible
 
+"Fish Shell
+if &shell =~# 'fish$'
+    set shell=sh
+endif
+
 "Enable modeline
 set modeline
 
