@@ -576,27 +576,17 @@ if isdirectory(expand('~/.vim/bundle/vundle'))
     Bundle 'gmarik/vundle'
     " Automatically opens popup menu for completions.
     Bundle 'vim-scripts/AutoComplPop'
-    " A tree explorer plugin for vim.
-    Bundle 'scrooloose/nerdtree'
-    " Mirror of the official Google go vim support.
-    Bundle 'ralph/go.vim'
     " Tab-complete your Python code.
     Bundle 'vim-scripts/Pydiction'
-    let g:pydiction_location='~/.vim/after/ftplugin/pydiction/complete-dict'
+    let g:pydiction_location=expand('~/.vim/after/ftplugin/pydiction/complete-dict')
     " A windows style IDE for Vim 6.0.
     Bundle 'vim-scripts/winmanager'
     " Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
     Bundle 'vim-scripts/taglist.vim'
-    " Vim Markdown runtime files.
-    Bundle 'tpope/vim-markdown'
-    " Flake8 plugin for Vim.
-    Bundle 'nvie/vim-flake8'
-    " compiler plugin for python style checking tool.
-    Bundle 'vim-scripts/pylint.vim'
-    autocmd FileType python compiler pylint
-    " let g:pylint_show_rate = 0
-    let g:pylint_onwrite = 0
-    let g:pylint_cwindow = 0
+    " vim2hs :: Vim -> Haskell.
+    Bundle 'dag/vim2hs'
+    " Fold python code nicely and toggle with one keystroke.
+    Bundle 'vim-scripts/Efficient-python-folding'
 endif
 "}}}
 
