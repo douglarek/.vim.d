@@ -719,4 +719,12 @@ function! SKEL_spec()
         setf spec
 endfunction
 "}}}
+
+" Remove unwanted spaces when save file
+" nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+set linebreak
+" note trailing space at end of next line
+set showbreak=>\ \ \ 
+autocmd FileType c,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 " vim: set fdm=marker:
