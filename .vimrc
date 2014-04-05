@@ -511,7 +511,7 @@ inoremap <C-V> <Esc>:set paste<CR>mui<C-R>+<Esc>mv'uV'v=:set nopaste<CR>
 
 let Tlist_Enable_Fold_Column = 0     "don't show left fold line
 let Tlist_WinWidth = 20              "the width of taglist's window
-let Tlist_Show_One_File = 1          "allow taglist to show onl tag of current file 
+let Tlist_Show_One_File = 1          "allow taglist to show onl tag of current file
 let g:Tb_ForceSyntaxEnable = 1
 "nmap <silent> <F2>   \di
 "nmap <silent> <F3>   \ds
@@ -562,7 +562,7 @@ let Tlist_Use_Right_Window=1   "show taglist in right
 let Tlist_Show_One_File=1      "show tags of current file
 let Tlist_Show_Menu=1
 let Tlist_File_Fold_Auto_Close=1
-let Tlist_Exit_OnlyWindow = 1 
+let Tlist_Exit_OnlyWindow = 1
 map <silent> <F3> :TlistToggle<cr>
 "}}}
 """"""""""""""""""""""""""""""""""""
@@ -625,7 +625,7 @@ fu Select_c_style()
     if search('^\t', 'n', 150)
         set shiftwidth=8
         set noexpandtab
-    el 
+    el
         set shiftwidth=4
         set expandtab
     en
@@ -642,7 +642,7 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Wrap text after a certain number of characters
-" Python: 79 
+" Python: 79
 " C: 79
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 
@@ -712,7 +712,7 @@ function! SKEL_spec()
         if newline != -1
             let hostname = strpart(hostname, 0, newline)
         endif
-        exe "%s/specCURRENT_YEAR/" . strftime("%Y") . "/ge" 
+        exe "%s/specCURRENT_YEAR/" . strftime("%Y") . "/ge"
         exe "%s/specRPM_CREATION_DATE/" . strftime("%a\ %b\ %d\ %Y") . "/ge"
         exe "%s/specRPM_CREATION_AUTHOR_MAIL/" . login . "@" . hostname . "/ge"
         exe "%s/specRPM_CREATION_NAME/" . expand("%:t:r") . "/ge"
@@ -721,10 +721,11 @@ endfunction
 "}}}
 
 " Remove unwanted spaces when save file
-" nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+"nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set linebreak
 " note trailing space at end of next line
-set showbreak=>\ \ \ 
-autocmd FileType c,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+set showbreak=>\ \ \
+"autocmd FileType c,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " vim: set fdm=marker:
