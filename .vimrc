@@ -575,6 +575,7 @@ if isdirectory(expand('~/.vim/bundle/vundle'))
     Bundle 'gmarik/vundle'
     " Automatically opens popup menu for completions.
     Bundle 'vim-scripts/AutoComplPop'
+    autocmd FileType python set omnifunc=pythoncomplete#Complete
     " Tab-complete your Python code.
     Bundle 'vim-scripts/Pydiction'
     let g:pydiction_location=expand('~/.vim/after/ftplugin/pydiction/complete-dict')
