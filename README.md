@@ -7,7 +7,7 @@ This is my personal vimrc that anyone can get it.
 1. Get it:
 
      ```
-     git clone https://github.com/douglarek/vimrc.git vimrc
+     git clone https://github.com/douglarek/myvim.git .myvim
      ```
      It takes `vim vundle` with `git submodule`, if you want to use it:
 
@@ -23,7 +23,7 @@ This is my personal vimrc that anyone can get it.
 2. Configure it:
 
     ```
-    cp -a vimrc/.vim vimrc/.vimrc ~/
+    cp -a .myvim/.vim .myvim/.vimrc ~/
     ```
     before this, please backup your own data, then install bundles:
     ```
@@ -33,6 +33,6 @@ This is my personal vimrc that anyone can get it.
 3. Update it:
 
     ```
-    cd vimrc
-    git submodule update
+    cd .myvim
+    git pull
     ```
