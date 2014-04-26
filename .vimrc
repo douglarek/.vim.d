@@ -292,6 +292,18 @@ map <Leader>q :e ~/buffer<CR>
 "Restore cursor to file position in previous editing session
 set viminfo='10,f1,<500,:20,/20,h,%,n~/.viminfo
 
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
+
 " Buffer - reverse everything ... :)
 map <F9> ggVGg?
 
