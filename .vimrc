@@ -599,8 +599,6 @@ if isdirectory(expand('~/.vim/bundle/vundle'))
     Bundle 'dag/vim2hs'
     " Fold python code nicely and toggle with one keystroke.
     Bundle 'vim-scripts/Efficient-python-folding'
-    " reStructuredText in vim. Your personal Wiki in RST.
-    Bundle 'Rykka/riv.vim'
 endif
 "}}}
 
