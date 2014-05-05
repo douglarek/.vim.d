@@ -600,7 +600,7 @@ if isdirectory(expand('~/.vim/bundle/vundle'))
     " Fold python code nicely and toggle with one keystroke.
     Bundle 'vim-scripts/Efficient-python-folding'
     " SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit.
-    Bundle 'vim-scripts/slimv.vim'
+    Bundle 'kovisoft/slimv'
 endif
 "}}}
 
