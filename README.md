@@ -23,6 +23,7 @@ This is my personal vimrc that anyone can get it.
 2. Configure it:
 
     ```
+    cd
     ln -s .myvim/.vim .vim
     ln -s .myvim/.vimrc .vimrc
     ```
