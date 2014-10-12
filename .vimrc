@@ -581,26 +581,28 @@ map <silent> <F3> :TlistToggle<cr>
 " => vim vundle settings
 """""""""""""""""""""""""""""""""""
 "{{{
-if isdirectory(expand('~/.vim/bundle/vundle'))
-    set rtp+=~/.vim/bundle/vundle/
-    call vundle#rc()
-    Bundle 'gmarik/vundle'
+if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
+    filetype off
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    Plugin 'gmarik/Vundle.vim'
     " Automatically opens popup menu for completions.
-    Bundle 'vim-scripts/AutoComplPop'
+    Plugin 'vim-scripts/AutoComplPop'
     autocmd FileType python set omnifunc=pythoncomplete#Complete
     " Tab-complete your Python code.
-    Bundle 'vim-scripts/Pydiction'
+    Plugin 'vim-scripts/Pydiction'
     let g:pydiction_location=expand('~/.vim/after/ftplugin/pydiction/complete-dict')
     " A windows style IDE for Vim 6.0.
-    Bundle 'vim-scripts/winmanager'
+    Plugin 'vim-scripts/winmanager'
     " Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
-    Bundle 'vim-scripts/taglist.vim'
-    " vim2hs :: Vim -> Haskell.
-    Bundle 'dag/vim2hs'
+    Plugin 'vim-scripts/taglist.vim'
     " Fold python code nicely and toggle with one keystroke.
-    Bundle 'vim-scripts/Efficient-python-folding'
-    " SLIME-like Lisp and Clojure REPL inside Vim with Profiling, Hyperspec, Paredit.
-    Bundle 'kovisoft/slimv'
+    Plugin 'vim-scripts/Efficient-python-folding'
+    " Vim support for Rust file detection and syntax highlighting.
+    Plugin 'wting/rust.vim'
+
+    call vundle#end()
+    filetype plugin indent on
 endif
 "}}}
 
