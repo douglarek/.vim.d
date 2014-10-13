@@ -624,6 +624,9 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     " Don't autofold code
     let g:pymode_folding = 0
 
+    " A Git wrapper so awesome
+    Plugin 'tpope/vim-fugitive'
+
     call vundle#end()
     filetype plugin indent on
 endif
