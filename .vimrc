@@ -588,18 +588,14 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     Plugin 'gmarik/Vundle.vim'
     " Automatically opens popup menu for completions.
     Plugin 'vim-scripts/AutoComplPop'
-    autocmd FileType python set omnifunc=pythoncomplete#Complete
-    " Tab-complete your Python code.
-    Plugin 'vim-scripts/Pydiction'
-    let g:pydiction_location=expand('~/.vim/after/ftplugin/pydiction/complete-dict')
     " A windows style IDE for Vim 6.0.
     Plugin 'vim-scripts/winmanager'
     " Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
     Plugin 'vim-scripts/taglist.vim'
-    " Fold python code nicely and toggle with one keystroke.
-    Plugin 'vim-scripts/Efficient-python-folding'
     " Vim support for Rust file detection and syntax highlighting.
     Plugin 'wting/rust.vim'
+    " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
+    Plugin 'klen/python-mode'
 
     call vundle#end()
     filetype plugin indent on
