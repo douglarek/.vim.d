@@ -630,6 +630,8 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
 
     " A Git wrapper so awesome
     Plugin 'tpope/vim-fugitive'
+    " Official mirror of Slimv versions released on vim.org
+    Plugin 'kovisoft/slimv'
 
     call vundle#end()
     filetype plugin indent on
