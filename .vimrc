@@ -607,6 +607,7 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     let g:pymode_lint_checker = "pyflakes,pep8"
     " Auto check on save
     let g:pymode_lint_write = 1
+    let g:pymode_lint_ignore = "E501,W"
 
     " Support virtualenv
     let g:pymode_virtualenv = 1
@@ -623,6 +624,9 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
 
     " Don't autofold code
     let g:pymode_folding = 0
+
+    let g:pymode_options_max_line_length = 99
+    let g:pymode_options_colorcolumn = 0
 
     " A Git wrapper so awesome
     Plugin 'tpope/vim-fugitive'
