@@ -561,23 +561,6 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 "}}}
 """"""""""""""""""""""""""""""""""""
-" => Winmanager settings
-"""""""""""""""""""""""""""""""""""
-"{{{
-"Winmanager
-let g:winManagerWindowLayout = "FileExplorer|BufExplorer"
-nmap wm :WMToggle<cr>
-nmap <silent> <F8> :WMToggle<cr>
-
-"TagList settings
-let Tlist_Use_Right_Window=1   "show taglist in right
-let Tlist_Show_One_File=1      "show tags of current file
-let Tlist_Show_Menu=1
-let Tlist_File_Fold_Auto_Close=1
-let Tlist_Exit_OnlyWindow = 1
-map <silent> <F3> :TlistToggle<cr>
-"}}}
-""""""""""""""""""""""""""""""""""""
 " => vim vundle settings
 """""""""""""""""""""""""""""""""""
 "{{{
@@ -588,10 +571,21 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     Plugin 'gmarik/Vundle.vim'
     " Automatically opens popup menu for completions.
     Plugin 'vim-scripts/AutoComplPop'
-    " A windows style IDE for Vim 6.0.
-    Plugin 'vim-scripts/winmanager'
+    " BufExplorer Plugin for Vim.
+    Plugin 'jlanzarotta/bufexplorer'
     " Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
     Plugin 'vim-scripts/taglist.vim'
+    let Tlist_Use_Right_Window=1
+    let Tlist_Show_One_File=1
+    let Tlist_Show_Menu=1
+    let Tlist_File_Fold_Auto_Close=1
+    let Tlist_Exit_OnlyWindow = 1
+    map <silent> <F3> :TlistToggle<cr>
+    " A windows style IDE for Vim 6.0.
+    Plugin 'vim-scripts/winmanager'
+    let g:winManagerWindowLayout = "FileExplorer|BufExplorer"
+    nmap wm :WMToggle<cr>
+    nmap <silent> <F8> :WMToggle<cr>
     " Vim support for Rust file detection and syntax highlighting.
     Plugin 'wting/rust.vim'
     " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
