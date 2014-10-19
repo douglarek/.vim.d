@@ -771,4 +771,12 @@ set showbreak=>\ \ \
 "autocmd FileType c,python autocmd BufWritePre <buffer> :%s/\s\+$//e
 autocmd BufWritePre * :%s/\s\+$//e
 
+"""""""""""""""""""""""""
+" Tips-and-Tricks "
+"""""""""""""""""""""""""
+" using oo (resp. OO) to insert a new line under (resp. over) the current line.
+nmap oo o<Esc>k
+nmap OO O<Esc>j
+""""""""""""""""""""""""
+
 " vim: set fdm=marker:
