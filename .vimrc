@@ -627,6 +627,9 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     Plugin 'davidhalter/jedi-vim'
     let g:jedi#popup_select_first = 0
 
+    " Automatically remove unused imports and clean up the rest.
+    Plugin 'vim-scripts/python_import.vim'
+
     " A Git wrapper so awesome
     Plugin 'tpope/vim-fugitive'
     " Official mirror of Slimv versions released on vim.org
