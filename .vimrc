@@ -35,6 +35,7 @@ endif
 "Set mapleader
 let mapleader=","
 let g:mapleader=","
+let maplocalleader = ","
 
 "Set search path
 "set path=.,~/,/usr/include/*,/etc/*,~/Projects/*
