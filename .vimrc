@@ -591,7 +591,7 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     Plugin 'wting/rust.vim'
     " Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.
     Plugin 'klen/python-mode'
-    let g:pymode_rope = 1
+    let g:pymode_rope = 0
 
     " Documentation
     let g:pymode_doc = 1
@@ -622,6 +622,10 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
 
     let g:pymode_options_max_line_length = 99
     let g:pymode_options_colorcolumn = 0
+
+    " Using the jedi autocompletion library for VIM.
+    Plugin 'davidhalter/jedi-vim'
+    let g:jedi#popup_select_first = 0
 
     " A Git wrapper so awesome
     Plugin 'tpope/vim-fugitive'
