@@ -630,6 +630,10 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     Plugin 'tpope/vim-fugitive'
     " Official mirror of Slimv versions released on vim.org
     Plugin 'kovisoft/slimv'
+    "A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
+    Plugin 'airblade/vim-gitgutter'
+    highlight clear SignColumn
+    nmap gt :GitGutterToggle<cr>
 
     call vundle#end()
     filetype plugin indent on
