@@ -116,9 +116,6 @@ set ruler
 "The commandbar is 2 high
 set cmdheight=1
 
-"Show line number
-set nu
-
 "Do not redraw, when executing macros, registers and other commands that
 "have not been typed
 set lz
@@ -626,6 +623,8 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     " Using the jedi autocompletion library for VIM.
     Plugin 'davidhalter/jedi-vim'
     let g:jedi#popup_select_first = 0
+    let g:jedi#use_tabs_not_buffers = 0
+    let g:jedi#use_splits_not_buffers = "bottom"
 
     " Automatically remove unused imports and clean up the rest.
     Plugin 'vim-scripts/python_import.vim'
