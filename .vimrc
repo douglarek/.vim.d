@@ -623,6 +623,9 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     " Automatically remove unused imports and clean up the rest.
     Plugin 'vim-scripts/python_import.vim'
 
+    " lean & mean status/tabline for vim that's light as air.
+    Plugin 'bling/vim-airline'
+
     " A Git wrapper so awesome
     Plugin 'tpope/vim-fugitive'
     " Official mirror of Slimv versions released on vim.org
