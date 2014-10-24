@@ -7,7 +7,7 @@ This is my personal vimrc that anyone can get it.
 1. Get it:
 
      ```
-     git clone https://github.com/douglarek/.vim.git .myvim
+     git clone https://github.com/douglarek/.vim.d.git .vim.d
      ```
      It takes `vim vundle` with `git submodule`, if you want to use it:
 
@@ -17,15 +17,15 @@ This is my personal vimrc that anyone can get it.
      ```
      Or, maybe you would love to do it all by one step:
      ```
-     git clone https://github.com/douglarek/.vim.git .myvim --recursive
+     git clone https://github.com/douglarek/.vim.git .vim.d --recursive
      ```
 
 2. Configure it:
 
     ```
     cd
-    ln -s .myvim/.vim .vim
-    ln -s .myvim/.vimrc .vimrc
+    ln -s .vim.d/.vim .vim
+    ln -s .vim.d/.vimrc .vimrc
     ```
     before this, please backup your own data, then install bundles:
     ```
@@ -35,6 +35,6 @@ This is my personal vimrc that anyone can get it.
 3. Update it:
 
     ```
-    cd .myvim
+    cd .vim.d
     git pull
     ```
