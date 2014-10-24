@@ -29,16 +29,10 @@ if exists("&autoread")
 	set autoread
 endif
 
-"Have the mouse enabled only in the insert mode
-"set mouse=i
-
 "Set mapleader
 let mapleader=","
 let g:mapleader=","
 let maplocalleader = ","
-
-"Set search path
-"set path=.,~/,/usr/include/*,/etc/*,~/Projects/*
 
 "Show command in status line
 set showcmd
@@ -692,8 +686,8 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Wrap text after a certain number of characters
-" Python: 79
-" C: 79
+" Python: 99
+" C: 99
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=99
 
 " Turn off settings in 'formatoptions' relating to comment formatting.
