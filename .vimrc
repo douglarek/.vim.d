@@ -592,9 +592,6 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     let g:jedi#use_tabs_not_buffers = 0
     let g:jedi#use_splits_not_buffers = "bottom"
 
-    " Automatically remove unused imports and clean up the rest.
-    Plugin 'vim-scripts/python_import.vim'
-
     " Flake8 plugin for Vim.
     Plugin 'nvie/vim-flake8'
     let g:flake8_max_line_length=99
