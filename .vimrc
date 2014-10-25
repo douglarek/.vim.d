@@ -649,9 +649,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 """""""""""""""""""""""""
 " Tips-and-Tricks "
 """""""""""""""""""""""""
-" using oo (resp. OO) to insert a new line under (resp. over) the current line.
-nmap oo o<Esc>k
-nmap OO O<Esc>j
+" using C-x C-n (resp. C-x C-p) to insert a new line under (resp. over) the current line.
+nmap <C-x><C-n> o<Esc>k
+nmap <C-x><C-p> O<Esc>j
 """"""""""""""""""""""""
 
 " vim: set fdm=marker:
