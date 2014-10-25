@@ -502,6 +502,7 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
 
     "A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
     Plugin 'airblade/vim-gitgutter'
+    let g:gitgutter_sign_column_always = 1
     highlight clear SignColumn
     nmap gt :GitGutterToggle<cr>
 
