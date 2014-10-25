@@ -595,6 +595,11 @@ if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
     " Automatically remove unused imports and clean up the rest.
     Plugin 'vim-scripts/python_import.vim'
 
+    " Flake8 plugin for Vim.
+    Plugin 'nvie/vim-flake8'
+    let g:flake8_max_line_length=99
+    let g:flake8_ignore="W391"
+
     " lean & mean status/tabline for vim that's light as air.
     Plugin 'bling/vim-airline'
 
