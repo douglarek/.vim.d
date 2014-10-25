@@ -398,6 +398,7 @@ nmap <C-a> ggVG
 "Insert mode left/right
 imap <C-l>  <Right>
 imap <C-h>  <Left>
+imap <C-e>  <Esc>A
 
 "vimdiff
 nmap <Leader>dt :diffthis<CR>
