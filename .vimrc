@@ -520,6 +520,9 @@ endif
     highlight clear SignColumn
     nmap gt :GitGutterToggle<cr>
 
+    " Monokai colorscheme, originally ported to vim by Damien Gombault
+    Plugin 'tomasr/molokai'
+
     call vundle#end()
     filetype plugin indent on
 endif
@@ -669,6 +672,11 @@ nmap <C-x><C-p> O<Esc>j
 " Exit with C-x C-x when nothing to save.
 nmap <C-x><C-x> :quit<cr>
 
+try
+    colorscheme molokai
+catch /^Vim\%((\a\+)\)\=:E185/
+    "
+endtry
 """"""""""""""""""""""""
 
 " vim: set fdm=marker:
