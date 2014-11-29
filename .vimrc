@@ -523,6 +523,10 @@ endif
     " Monokai colorscheme, originally ported to vim by Damien Gombault
     Plugin 'tomasr/molokai'
 
+    " Go development plugin for Vim
+    Plugin 'fatih/vim-go'
+    nmap gd :GoDef<cr>
+
     call vundle#end()
     filetype plugin indent on
 endif
