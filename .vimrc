@@ -501,8 +501,9 @@ endif
 
     " Flake8 plugin for Vim.
     Plugin 'nvie/vim-flake8'
-    let g:flake8_max_line_length=99
+    let g:flake8_max_line_length=119
     let g:flake8_ignore="W391"
+    autocmd FileType python map <buffer> <Leader>fl :call Flake8()<CR>
 
     " lean & mean status/tabline for vim that's light as air.
     Plugin 'bling/vim-airline'
@@ -525,7 +526,8 @@ endif
 
     " Go development plugin for Vim
     Plugin 'fatih/vim-go'
-    nmap gd :GoDef<cr>
+    nmap <Leader>gr :GoRun<cr>
+    nmap <Leader>gd :GoDef<cr>
 
     call vundle#end()
     filetype plugin indent on
@@ -583,9 +585,10 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Wrap text after a certain number of characters
-" Python: 99
+" Python: 119
 " C: 99
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=99
+au BufRead,BufNewFile *.py,*.pyw set textwidth=119
+au BufRead,BufNewFile *.c,*.h set textwidth=99
 
 " Turn off settings in 'formatoptions' relating to comment formatting.
 " - c : do not automatically insert the comment leader when wrapping based on
