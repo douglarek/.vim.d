@@ -523,6 +523,9 @@ endif
     nmap <leader>= :TagbarToggle<CR>
     let g:tagbar_autofocus = 1
 
+    " vim2hs :: Vim -> Haskell
+    Plugin 'dag/vim2hs'
+
     call vundle#end()
     filetype plugin indent on
 endif
