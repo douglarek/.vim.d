@@ -1,5 +1,7 @@
 ## About
 
+*NOTE* this repo is **Deprecated**.
+
 This is my personal vimrc that anyone can get it.
 
 ## Quick start
